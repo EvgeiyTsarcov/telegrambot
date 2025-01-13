@@ -13,6 +13,9 @@ def load_data():
     except FileNotFoundError:
         return {"chats": {}, "reminders": {}, "groups": {}}
 
+
+
+
 # Команда /forward
 async def forward_message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if len(context.args) < 1:
